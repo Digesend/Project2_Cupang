@@ -1,0 +1,29 @@
+#container{
+    background-color: aqua;
+    width: 1300px;
+    margin: 0 auto; /*레이아웃을 중앙에 정렬하는 가장 일반적인 방법*/
+}
+
+#header{
+    background-color: yellow;
+    height: 100px;
+}
+
+#banner{
+    background-color: blue;
+    height: 500px;
+}
+
+#navigation{
+    background-color: blueviolet;
+    height: 50px;
+}
+
+#main{
+    background-color: red;
+}
+
+footer{
+    background-color: brown;
+    height: 50px;
+}
