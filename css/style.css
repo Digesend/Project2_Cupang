@@ -1,12 +1,56 @@
 #container{
     background-color: aqua;
-    width: 1300px;
+    width: 1250px;
     margin: 0 auto; /*레이아웃을 중앙에 정렬하는 가장 일반적인 방법*/
 }
 
+#topBanner{
+    background: #80ca53;
+    height: 50px;
+}
+
 #header{
-    background-color: yellow;
-    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#header #inner{
+    width: 1200px;
+    margin: 0 auto;
+    position:relative;
+}
+
+#header #header-util{
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#dotum *{
+    /*font-family: '돋음',Dotum,'Roboto','Noto Sans KR','Malgum Gothic',Verdana,Dotum,AppleGothic,sans-serif;*/
+}
+
+#header #header-util > ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+#header #header-util > ul > li{
+    float:left;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+    padding:0 9px;
+    font-size: 12px;
+    position: relative;
+    list-style: none;
+    text-align: -webkit-match-parent;
+}
+
+#header #header-util > ul > li > a{
+    color: #414141;
 }
 
 #banner{
