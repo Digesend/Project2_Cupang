@@ -1,17 +1,61 @@
 #container{
     background-color: aqua;
-    width: 1300px;
+    width: 1100px;
     margin: 0 auto; /*레이아웃을 중앙에 정렬하는 가장 일반적인 방법*/
 }
 
 #header{
     background-color: yellow;
     height: 100px;
+    position:relative;
 }
 
-#banner{
+.slider-container{
     background-color: blue;
     height: 500px;
+    position:relative;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.slider-wrapper{
+    display: flex;
+    transition: transform 0.5s ease;    /*자연스럽게 슬라이드가 넘어가는 효과*/
+    height: 100%;
+}
+
+.slider-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /*이미지를 컨테이너에 꽉 채우기*/
+}
+
+.prev, .next, .pause {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.pause {
+    top: 90%; /* 화면 하단에 배치 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
 #navigation{
@@ -26,4 +70,30 @@
 footer{
     background-color: brown;
     height: 50px;
+}
+
+#header img{
+    margin: 1em 4em;
+    width: 10em;
+    height: 4em;
+}
+
+button{
+    background-color: greenyellow;
+    border-width: thin;
+    border-radius: 7px;
+    margin: 0.5em;
+    padding:0.3em;
+}
+
+#login{
+    position:absolute;
+    top: 10px;
+    right: 100px;
+}
+
+#signup{
+    position:absolute;
+    top:10px;
+    right:20px;
 }

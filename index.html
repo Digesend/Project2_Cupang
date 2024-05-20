@@ -10,10 +10,23 @@
         <div id="container">
             <!--제목 및 로그인 버튼-->
             <div id="header">
+                <img src="image/logo.jpg" alt="로고데스" onclick="location.href='index.html'">
+                <button id="login">로그인</button>
+                <button id="signup">회원가입</button>
             </div>
             <!--배너-->
-            <div id="banner">
-
+            <div class="slider-container">  <!--js 영향이 있는건 class로 디자인한다.-->
+                <div class="slider-wrapper">
+                    <img src="image/slider1.jpg" alt="Image 1">
+                    <img src="image/slider2.jpg" alt="Image 2">
+                    <img src="image/slider3.jpg" alt="Image 3">
+                    <img src="image/slider4.jpg" alt="Image 4">
+                    <img src="image/slider1.jpg" alt="Image 1(clone)">
+                    <!--이미지가 첫장면으로 부드럽게 넘어가게 하기위해 clone을 추가-->
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+                <button class="pause" onclick="toggleSlide()">Pause</button> <!-- 멈춤 버튼 추가 -->;
             </div>
             <!--메뉴-->
             <div id="navigation">
@@ -28,5 +41,6 @@
 
             </footer>
         </div>
+        <script src="javascript/script.js"></script>
     </body>
 </html>
