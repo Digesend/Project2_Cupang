@@ -6,23 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="javascript/prefixfree.min.js"></script>
-    <style>
-        /* 추가된 CSS 스타일 */
-        #header-util ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-        #header-util ul li {
-            margin-right: 10px;
-            border-right: 1px solid #ccc; /* 각 항목 사이에 세로줄로 구분 */
-            padding-right: 10px;
-        }
-        #header-util ul li:last-child {
-            border-right: none; /* 마지막 항목의 세로 줄 제거 */
-        }
-    </style>
 </head>
 <body>
     <div id="container">
@@ -72,23 +55,47 @@
         <!--메뉴-->
         <div id="navigation">
             <div id="inner">
-                <div class="sub-menu">
-                    <ul class="menu">
-                        <li><a href="javascript:void(0)">정기구독</a></li>
-                        <li><a href="javascript:void(0)">신상품</a></li>
-                        <li><a href="javascript:void(0)">인기상품</a></li>
-                        <li><a href="javascript:void(0)">제철나물</a></li>
-                        <li><a href="javascript:void(0)">기획상품</a></li>
-                        <li><a href="javascript:void(0)">제철알림</a></li>
-                        <li><a href="javascript:void(0)">레시피</a></li>
-                        <li><a href="javascript:void(0)">견적문의</a></li>
-                    </ul>
-                </div>
+                <ul class="menu">
+                    <li><a href="javascript:void(0)">정기구독</a></li>
+                    <li><a href="javascript:void(0)">신상품</a></li>
+                    <li><a href="javascript:void(0)">인기상품</a></li>
+                    <li><a href="javascript:void(0)">제철나물</a></li>
+                    <li><a href="javascript:void(0)">기획상품</a></li>
+                    <li><a href="javascript:void(0)">제철알림</a></li>
+                    <li><a href="javascript:void(0)">레시피</a></li>
+                    <li><a href="javascript:void(0)">견적문의</a></li>
+                </ul>
             </div>
         </div>
         <!--메인-->
         <div id="main">
-
+            <div id="title1">
+                <div id="inner">
+                    <strong>추천 상품</strong>
+                    <a href="javascript:void(0)">더보기</a>
+                </div>
+            </div>
+            <div id="item1">
+                <div id="inner">
+                    <ul class="menu">
+                        <li>
+                            <img src="image/good_item1.png" alt="추천상품1" onclick="location.href='index.html'">
+                            <a href="javascript:void(0)">공심채(모닝글로리)</a></br></br>
+                            <strong style="color: #6cbb45;">2,700원</strong>
+                        </li>
+                        <li>
+                            <img src="image/good_item2.png" alt="추천상품2" onclick="location.href='index.html'">
+                            <a href="javascript:void(0)">고구마순</a></br></br>
+                            <strong style="color: #6cbb45;">3,400원</strong>
+                        </li>
+                        <li>
+                            <img src="image/good_item3.png" alt="추천상품3" onclick="location.href='index.html'">
+                            <a href="javascript:void(0)">비름</a></br></br>
+                            <strong style="color: #6cbb45;">4,300원</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <footer>
